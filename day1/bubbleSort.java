@@ -1,3 +1,4 @@
+package day1;
 public class bubbleSort {
     public static void main(String[] args) {
         int arr[] = { 4, 45, 2652, 2465, 6, 246, 24 };

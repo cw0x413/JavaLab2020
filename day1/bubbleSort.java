@@ -1,13 +1,21 @@
-package day1;
+import java.util.Scanner;
+
 public class bubbleSort {
     public static void main(String[] args) {
-        int arr[] = { 4, 45, 2652, 2465, 6, 246, 24 };
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter number of elements");
+        int n = scanner.nextInt();
+        int arr[] = new int[n];
+        System.out.println("Enter " + n + " elements seperated by space");
+        for (int i = 0; i < n; i++)
+            arr[i] = scanner.nextInt();
+        scanner.close();
         System.out.println("Non sorted array");
         for (int ar : arr)
             System.out.print(ar + " ");
         System.out.println("\nSorted array");
-        int[] sorArr = doBubbleSort(arr);
-        for (int ar : sorArr)
+        doBubbleSort(arr);
+        for (int ar : arr)
             System.out.print(ar + " ");
         System.out.println();
 

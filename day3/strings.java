@@ -91,6 +91,6 @@ public class strings {
         }
         System.out.println("Exitted");
         sc.close();
-        System.exit(0);;   
+        System.exit(0);
     }
 }

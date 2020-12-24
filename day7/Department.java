@@ -1,7 +1,9 @@
 package day7;
 
+import day7.*;
+
 public interface Department {
-    void readdata();
+    void readdata() throws AgeException;
 
     void printdata();
 

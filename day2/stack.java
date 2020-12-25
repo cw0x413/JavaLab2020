@@ -19,16 +19,15 @@ public class stack {
     }
 
     int pop() {
-        if (top != 0)
+        if (top > -1)
             return STACK[top--];
         return Integer.MIN_VALUE;
     }
 
     void display() {
         System.out.println("Displaying");
-        for (int i = 0; i <= top; i++) {
+        for (int i = 0; i <= top; i++)
             System.out.print(STACK[i] + " ");
-        }
     }
 
     public static void main(String[] args) {

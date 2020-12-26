@@ -4,3 +4,6 @@ problem1:
 	javac primeNumbers.java bubbleSort.java fibonacci.java
 problem2:
 	javac account.java
+
+clean:
+	rm -rfv *.class

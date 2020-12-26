@@ -6,3 +6,6 @@ problem4:
 	javac Complex.java
 problem5:
 	javac matrixmult.java
+
+clean:
+	rm -rfv *.class

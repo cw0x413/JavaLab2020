@@ -47,12 +47,14 @@ public class ISE_department implements Department {
     @Override
     public void printdata() {
         for (Faculty faculty : facultylist) {
-            System.out.print("Name: " + faculty.name);
-            System.out.println("Age: " + faculty.age);
-            System.out.println("Years of Experience: " + faculty.years_of_experience);
-            System.out.println("Designation: " + faculty.designation);
-            System.out.println("Joining Date" + faculty.joiningDate);
-            System.out.println("Subjects Handled" + faculty.subjectsHandled);
+            if (faculty.years_of_experience >= 20) {
+                System.out.print("Name: " + faculty.name);
+                System.out.println("Age: " + faculty.age);
+                System.out.println("Years of Experience: " + faculty.years_of_experience);
+                System.out.println("Designation: " + faculty.designation);
+                System.out.println("Joining Date" + faculty.joiningDate);
+                System.out.println("Subjects Handled" + faculty.subjectsHandled);
+            }
         }
     }
 
@@ -70,12 +72,4 @@ public class ISE_department implements Department {
         }
     }
 
-    public static void main(String[] args) {
-        ISE_department ise_department = new ISE_department();
-        try {
-            ise_department.readdata();
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-    }
 }

@@ -31,7 +31,7 @@ public class Personal {
 
 	}
 
-	void isEligibleLoan() {
+	void isEligible() {
 		if ((loanAmount <= salary.total / 2) && (numberOfLoans < 5))
 			System.out.println("Is eligible for loan");
 		else
@@ -64,7 +64,7 @@ public class Personal {
 		System.out.println("Years of Experience: " + experienceYears);
 		System.out.println("Number of Loans: " + numberOfLoans);
 		System.out.println("Salary: " + salary.total);
-		isEligibleLoan();
+		isEligible();
 		System.out.println("The tax to be paid is " + tax);
 		isEligiblePromotion();
 		System.out.println("\n\n\n");

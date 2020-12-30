@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -15,8 +16,9 @@ public class ArrListQ {
 
     void display() {
         System.out.print("Displaying ");
-        for (String node : queueList)
-            System.out.print(node + " ");
+        Iterator<String> it = queueList.iterator();
+        while (it.hasNext())
+            System.out.println(it.next() + " ");
         System.out.println();
     }
 

@@ -1,3 +1,4 @@
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -6,9 +7,12 @@ public class LLString {
 
     void lt5() {
         System.out.println("Displaying names with length less than 5");
-        for (String data : linkedList)
-            if (data.length() < 5)
-                System.out.print(data + " ");
+        Iterator<String> iterator = linkedList.iterator();
+        while (iterator.hasNext()) {
+            String str = iterator.next();
+            if (str.length() < 5)
+                System.out.print(str + " ");
+        }
         System.out.println();
     }
 

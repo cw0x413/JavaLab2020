@@ -1,5 +1,3 @@
-package day1;
-
 import java.util.Scanner;
 
 class fibonacci {
@@ -9,14 +7,19 @@ class fibonacci {
         int n0 = 0, n1 = 1;
         // without recursion
         enterData();
-        for (int i = 0; i < n - 1; i++) {
+        System.out.println("Without recursion");
+        for (int i = 0; i < 2 && i < n - 1; i++)
+            System.out.println(i + " ");
+        for (int i = 2; i < n; i++) {
             int temp = n0 + n1;
             n0 = n1;
             n1 = temp;
             System.out.println(n1);
         }
         // with recursion
-        System.out.println(fibonacciWithRecursion(n));
+        System.out.println("With recursion");
+        for (int i = 0; i < n; i++)
+            System.out.println(fibonacciWithRecursion(i));
     }
 
     static Scanner scanner = new Scanner(System.in);
